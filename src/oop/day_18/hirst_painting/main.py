@@ -13,7 +13,7 @@ screen.colormode(255)
 
 colours = colour_list.colours
 tim.penup()
-start_position = tim.setposition(-400, -300)
+tim.setposition(-400, -300)
 
 
 def draw_raw():
