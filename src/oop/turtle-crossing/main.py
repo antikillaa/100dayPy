@@ -1,7 +1,7 @@
 import time
 from turtle import Screen
-from player import Player
-from car_manager import CarManager
+from player import Player, STARTING_POSITION
+from car_manager import CarManager, MOVE_INCREMENT
 from scoreboard import Scoreboard
 
 screen = Screen()
@@ -24,10 +24,15 @@ while game_is_on:
     cars.append(CarManager())
 
     for car in cars:
-        if player.distance(car) < 1:
+        if player.distance(car) < 20:
             game_is_on = False
-            Scoreboard()
+            Scoreboard().loose()
         car.move()
+
+    if player.ycor() == 300:
+        player.goto(STARTING_POSITION)
+        for car in cars:
+            car.speed += MOVE_INCREMENT
 
     screen.update()
 

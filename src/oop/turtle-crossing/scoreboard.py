@@ -7,5 +7,8 @@ class Scoreboard(Turtle):
 
     def __init__(self):
         super().__init__()
+        self.clear()
+
+    def loose(self):
         self.goto(0, 0)
         self.write(f"Game over", align="center", font=FONT)
