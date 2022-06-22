@@ -8,6 +8,32 @@
     <h1>My contacts</h1>
     <p>Phone: <b>000-000-00-00</b></p>
     <p>Email: <b><a href="mailto:21321321@gmail.com">21321321@gmail.com</a></b></p>
+    <hr>
+
+    <form action="mailto:info@mysite.com" method="post" class="contact-form" enctype="text/plain">
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Enter your message</label>
+            <br>
+            <textarea name="message" rows="10" cols="30" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit!">
+        </div>
+
+
+    </form>
+
+
+
+    <p></p>
     <a href="index.html">Back</a>
 </body>
 </html>
