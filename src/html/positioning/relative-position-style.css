@@ -1,0 +1,23 @@
+.top {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    display: inline-block;
+}
+
+.middle {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    display: inline-block;
+}
+
+.bottom {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    display: inline-block;
+}
