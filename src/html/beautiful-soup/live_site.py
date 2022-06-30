@@ -30,4 +30,4 @@ articles = {
 
 data = pandas.DataFrame(articles)
 data.to_html("articles.html", encoding="UTF-8")
-data.to_excel("articles.xls", encoding="UTF-8")
+data.to_excel("articles.xlsx", encoding="UTF-8")

@@ -1,5 +1,4 @@
-import random
-from datetime import date
+import os
 
 import requests
 from flask import Flask, render_template
@@ -34,4 +33,5 @@ def get_contact():
 
 if __name__ == "__main__":
     # Run the app in debug mode to auto-reload
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5001))
+    app.run(debug=True, host='0.0.0.0', port=port)
