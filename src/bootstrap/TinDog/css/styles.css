@@ -6,8 +6,13 @@ h1 {
     font-family: 'Montserrat';
     font-size: 3rem;
     line-height: 1.5;
+    color: white;
 }
 
 .container-fluid {
     padding: 3% 15%;
+}
+
+.iphone-image {
+    transform: rotate(25deg);
 }
